@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Vote View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoteViewController" customModule="SwipeToVote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4S-FY-Kgr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mf-Bl-4CQ">
+                                        <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                        <state key="normal" title="reset"/>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-5D-U4C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1mf-Bl-4CQ" firstAttribute="centerY" secondItem="c4S-FY-Kgr" secondAttribute="centerY" id="IUf-te-hHJ"/>
+                                    <constraint firstItem="1mf-Bl-4CQ" firstAttribute="centerX" secondItem="c4S-FY-Kgr" secondAttribute="centerX" id="Qf6-FT-5wd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c4S-FY-Kgr" secondAttribute="trailing" id="KRb-Mm-g8a"/>
+                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dE4-jK-nO9"/>
+                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="veR-tJ-dIN"/>
+                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wju-uR-dvi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="c4S-FY-Kgr" id="Vp3-dV-cLX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="339"/>
+        </scene>
+    </scenes>
+</document>
