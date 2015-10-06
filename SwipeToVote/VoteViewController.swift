@@ -6,9 +6,9 @@
 //  Copyright © 2015 Jackson Doherty. All rights reserved.
 //
 
-// todo:    - make sure I manage memory apropriately
+// todo:    - make sure I manage memory apropriately -> once block.center is beyond certain point, stop/delete it?
+//              look at Stanford lecture
 //          - make sure I treat attachment behaviors safely
-//          - understand difference of lazy var and calculated var - initialization?
 //          - figure out why blocks all distorted after a couple of resets
 //          - figure out why I need to undo attach behavior
 
@@ -53,7 +53,7 @@ class VoteViewController: UIViewController {
     
     // block size
     let blockHeight = 50
-    var blockSize: CGSize { // difference between this and lazy var?
+    var blockSize: CGSize {
         let width = (screen.size.width / 2)
         let height = CGFloat(blockHeight)
         return CGSize(width: width, height: height)
