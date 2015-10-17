@@ -16,39 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4S-FY-Kgr">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nna-js-xCd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mf-Bl-4CQ">
-                                        <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                        <state key="normal" title="reset"/>
-                                        <connections>
-                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9S-5D-U4C"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="1mf-Bl-4CQ" firstAttribute="centerY" secondItem="c4S-FY-Kgr" secondAttribute="centerY" id="IUf-te-hHJ"/>
-                                    <constraint firstItem="1mf-Bl-4CQ" firstAttribute="centerX" secondItem="c4S-FY-Kgr" secondAttribute="centerX" id="Qf6-FT-5wd"/>
-                                </constraints>
-                            </view>
+                                <connections>
+                                    <segue destination="kNV-YU-AHZ" kind="embed" id="uVP-0O-a6W"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="c4S-FY-Kgr" secondAttribute="trailing" id="KRb-Mm-g8a"/>
-                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dE4-jK-nO9"/>
-                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="veR-tJ-dIN"/>
-                            <constraint firstItem="c4S-FY-Kgr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wju-uR-dvi"/>
+                            <constraint firstItem="Nna-js-xCd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FAq-IQ-R8c"/>
+                            <constraint firstAttribute="trailing" secondItem="Nna-js-xCd" secondAttribute="trailing" id="K8a-t3-dG0"/>
+                            <constraint firstItem="Nna-js-xCd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qzW-DH-JMd"/>
+                            <constraint firstItem="Nna-js-xCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zXc-qW-nj3"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="backgroundView" destination="c4S-FY-Kgr" id="Vp3-dV-cLX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="232" y="339"/>
+        </scene>
+        <!--Child Vote View Controller-->
+        <scene sceneID="dmy-eI-qSQ">
+            <objects>
+                <viewController id="kNV-YU-AHZ" customClass="ChildVoteViewController" customModule="SwipeToVote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q5D-HV-3Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG4-G6-bCz">
+                                <rect key="frame" x="283" y="285" width="35" height="30"/>
+                                <state key="normal" title="reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="kNV-YU-AHZ" eventType="touchUpInside" id="C4n-kz-Zaf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dG4-G6-bCz" firstAttribute="centerY" secondItem="Q5D-HV-3Ga" secondAttribute="centerY" id="etM-BC-BBK"/>
+                            <constraint firstItem="dG4-G6-bCz" firstAttribute="centerX" secondItem="Q5D-HV-3Ga" secondAttribute="centerX" id="fOP-mG-zzm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaI-bJ-eEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="339"/>
         </scene>
     </scenes>
 </document>

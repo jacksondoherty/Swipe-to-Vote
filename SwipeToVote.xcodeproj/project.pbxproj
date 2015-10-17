@@ -14,6 +14,7 @@
 		157148541BC0723C0098881E /* SwipeToVoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157148531BC0723C0098881E /* SwipeToVoteTests.swift */; };
 		1571485F1BC0723C0098881E /* SwipeToVoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571485E1BC0723C0098881E /* SwipeToVoteUITests.swift */; };
 		1571486D1BC072CB0098881E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571486C1BC072CB0098881E /* VoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		15CDA2071BD1FDA800E8C297 /* ChildVoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CDA2061BD1FDA800E8C297 /* ChildVoteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8EC5140C4072528C6EC7B79B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7E0FD42A8F2523EDB2ADF5 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1571485E1BC0723C0098881E /* SwipeToVoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToVoteUITests.swift; sourceTree = "<group>"; };
 		157148601BC0723C0098881E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1571486C1BC072CB0098881E /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		15CDA2061BD1FDA800E8C297 /* ChildVoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildVoteViewController.swift; sourceTree = "<group>"; };
 		3D1D22D02D7B08BF23AA7CE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7A7E0FD42A8F2523EDB2ADF5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B9B4F8FED08CFE877FCFB1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				157148421BC0723C0098881E /* Main.storyboard */,
 				1571486C1BC072CB0098881E /* VoteViewController.swift */,
+				15CDA2061BD1FDA800E8C297 /* ChildVoteViewController.swift */,
 				157148451BC0723C0098881E /* Assets.xcassets */,
 				1571483E1BC0723C0098881E /* AppDelegate.swift */,
 				157148471BC0723C0098881E /* LaunchScreen.storyboard */,
@@ -332,6 +335,7 @@
 			files = (
 				1571486D1BC072CB0098881E /* VoteViewController.swift in Sources */,
 				1571483F1BC0723C0098881E /* AppDelegate.swift in Sources */,
+				15CDA2071BD1FDA800E8C297 /* ChildVoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
