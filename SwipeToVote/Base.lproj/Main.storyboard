@@ -31,6 +31,9 @@
                             <constraint firstItem="Nna-js-xCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zXc-qW-nj3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="Nna-js-xCd" id="N7t-We-Vub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +43,10 @@
         <scene sceneID="dmy-eI-qSQ">
             <objects>
                 <viewController id="kNV-YU-AHZ" customClass="ChildVoteViewController" customModule="SwipeToVote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Afh-BR-6B6"/>
+                        <viewControllerLayoutGuide type="bottom" id="0L3-LC-uiz"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q5D-HV-3Ga">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,9 +10,6 @@ import UIKit
 import EXTView
 
 class ChildVoteViewController: UIViewController {
-
-    // bounds to get screen size
-    var screen = UIScreen.mainScreen().bounds
     
     // dynamic animator
     lazy var animator: UIDynamicAnimator = {
@@ -45,7 +42,7 @@ class ChildVoteViewController: UIViewController {
     // block size
     let blockHeight = 50
     var blockSize: CGSize {
-        let width = (screen.size.width / 2)
+        let width = (self.view.frame.size.width / 2)
         let height = CGFloat(blockHeight)
         return CGSize(width: width, height: height)
     }
@@ -53,13 +50,14 @@ class ChildVoteViewController: UIViewController {
     // fade size
     var fadeSize: CGSize {
         let width = blockSize.width
-        let height = screen.size.height
+        let height = self.view.frame.size.height
         return CGSize(width: width, height: height)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // container views on seem to be on seperate threads
         print("this is the container view")
         
         // add push behavior to animator and configure settings
@@ -82,7 +80,7 @@ class ChildVoteViewController: UIViewController {
     func createBlocks() {
         
         // both blocks start in same y position
-        let blockStartYPosition = screen.size.height - CGFloat(blockHeight)
+        let blockStartYPosition = self.view.frame.size.height - CGFloat(blockHeight)
         
         // create block1 and add to view
         let position1 = CGPoint(x: 0, y: blockStartYPosition)
@@ -92,7 +90,7 @@ class ChildVoteViewController: UIViewController {
         self.view.addSubview(blockView1)
         
         // create block2 and add to view
-        let position2 = CGPoint(x: (screen.size.width / 2), y: blockStartYPosition)
+        let position2 = CGPoint(x: (self.view.frame.size.width / 2), y: blockStartYPosition)
         let frame2 = CGRect(origin: position2, size: blockSize)
         blockView2.frame = frame2
         blockView2.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
@@ -102,7 +100,7 @@ class ChildVoteViewController: UIViewController {
     func createFades() {
         
         // create fade1 and add to view
-        let fadePosition1 = CGPoint(x: 0, y: screen.size.height)
+        let fadePosition1 = CGPoint(x: 0, y: self.view.frame.size.height)
         let fadeFrame1 = CGRect(origin: fadePosition1, size: fadeSize)
         fadeView1.frame = fadeFrame1
         fadeView1.bgStartColor = UIColor.purpleColor()
@@ -110,7 +108,7 @@ class ChildVoteViewController: UIViewController {
         self.view.addSubview(fadeView1)
         
         // create fade2 and add to view
-        let fadePosition2 = CGPoint(x: (screen.size.width / 2), y: screen.size.height)
+        let fadePosition2 = CGPoint(x: (self.view.frame.size.width / 2), y: self.view.frame.size.height)
         let fadeFrame2 = CGRect(origin: fadePosition2, size: fadeSize)
         fadeView2.frame = fadeFrame2
         fadeView2.bgStartColor = UIColor.purpleColor()
@@ -129,10 +127,10 @@ class ChildVoteViewController: UIViewController {
         // note: coordinates here are calculated by center of views
         
         // move block by translation
-        blockView1.center = CGPoint(x: blockView1.center.x, y: screen.size.height - blockSize.height/2 + translation.y)
+        blockView1.center = CGPoint(x: blockView1.center.x, y: self.view.frame.size.height - blockSize.height/2 + translation.y)
         
         // move fade by translation
-        fadeView1.center = CGPoint(x: fadeView1.center.x, y: screen.size.height + fadeSize.height/2 + translation.y)
+        fadeView1.center = CGPoint(x: fadeView1.center.x, y: self.view.frame.size.height + fadeSize.height/2 + translation.y)
         
         if gesture.state == UIGestureRecognizerState.Ended {
             
@@ -154,8 +152,8 @@ class ChildVoteViewController: UIViewController {
                 
             } else {
                 
-                blockView1.center = CGPoint(x: blockView1.center.x, y: screen.size.height - blockSize.height/2)
-                fadeView1.center = CGPoint(x: fadeView1.center.x, y: screen.size.height + fadeSize.height/2)
+                blockView1.center = CGPoint(x: blockView1.center.x, y: self.view.frame.size.height - blockSize.height/2)
+                fadeView1.center = CGPoint(x: fadeView1.center.x, y: self.view.frame.size.height + fadeSize.height/2)
                 blockView2.userInteractionEnabled = true
             }
         }
@@ -169,10 +167,10 @@ class ChildVoteViewController: UIViewController {
         let translation = gesture.translationInView(self.view)
         
         // move block by translation
-        blockView2.center = CGPoint(x: blockView2.center.x, y: screen.size.height - blockSize.height/2 + translation.y)
+        blockView2.center = CGPoint(x: blockView2.center.x, y: self.view.frame.size.height - blockSize.height/2 + translation.y)
         
         // move fade by translation
-        fadeView2.center = CGPoint(x: fadeView2.center.x, y: screen.size.height + fadeSize.height/2 + translation.y)
+        fadeView2.center = CGPoint(x: fadeView2.center.x, y: self.view.frame.size.height + fadeSize.height/2 + translation.y)
         
         // let go of block
         if gesture.state == UIGestureRecognizerState.Ended {
@@ -195,8 +193,8 @@ class ChildVoteViewController: UIViewController {
                 
             } else {
                 
-                blockView2.center = CGPoint(x: blockView2.center.x, y: screen.size.height - blockSize.height/2)
-                fadeView2.center = CGPoint(x: fadeView2.center.x, y: screen.size.height + fadeSize.height/2)
+                blockView2.center = CGPoint(x: blockView2.center.x, y: self.view.frame.size.height - blockSize.height/2)
+                fadeView2.center = CGPoint(x: fadeView2.center.x, y: self.view.frame.size.height + fadeSize.height/2)
                 blockView1.userInteractionEnabled = true
             }
         }
@@ -204,6 +202,7 @@ class ChildVoteViewController: UIViewController {
     
     // won't be a function in the Scooper app
     @IBAction func reset(sender: AnyObject) {
+        
         // undo attachments - not sure why but seems necessary
         if let attachment1 = attach1 {
             animator.removeBehavior(attachment1)
@@ -217,12 +216,12 @@ class ChildVoteViewController: UIViewController {
         push.removeItem(blockView2)
         
         // put blocks and fades back into their original positions
-        blockView1.center = CGPoint(x: blockView1.center.x, y: screen.size.height - blockSize.height/2)
+        blockView1.center = CGPoint(x: blockView1.center.x, y: self.view.frame.size.height - blockSize.height/2)
         blockView1.userInteractionEnabled = true
-        fadeView1.center = CGPoint(x: fadeView1.center.x, y: screen.size.height + fadeSize.height/2)
-        blockView2.center = CGPoint(x: blockView2.center.x, y: screen.size.height - blockSize.height/2)
+        fadeView1.center = CGPoint(x: fadeView1.center.x, y: self.view.frame.size.height + fadeSize.height/2)
+        blockView2.center = CGPoint(x: blockView2.center.x, y: self.view.frame.size.height - blockSize.height/2)
         blockView2.userInteractionEnabled = true
-        fadeView2.center = CGPoint(x: fadeView2.center.x, y: screen.size.height + fadeSize.height/2)
+        fadeView2.center = CGPoint(x: fadeView2.center.x, y: self.view.frame.size.height + fadeSize.height/2)
 
     }
 
