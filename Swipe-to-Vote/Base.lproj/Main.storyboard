@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djm-rl-vrE">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                                <connections>
+                                    <segue destination="QT8-bL-71f" kind="embed" id="JTz-OO-G5g"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy1-hP-D3w">
+                                <rect key="frame" x="300" y="0.0" width="300" height="600"/>
+                                <connections>
+                                    <segue destination="QHL-Es-xxW" kind="embed" id="KwI-mp-ptd"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gy1-hP-D3w" secondAttribute="trailing" id="2Yr-9U-3wj"/>
+                            <constraint firstItem="Djm-rl-vrE" firstAttribute="width" secondItem="Gy1-hP-D3w" secondAttribute="width" id="BAy-XZ-BcD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gy1-hP-D3w" secondAttribute="bottom" id="BQM-HN-z9m"/>
+                            <constraint firstItem="Gy1-hP-D3w" firstAttribute="leading" secondItem="Djm-rl-vrE" secondAttribute="trailing" id="IYD-zL-3rG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Djm-rl-vrE" secondAttribute="bottom" id="WJV-MM-hqt"/>
+                            <constraint firstItem="Gy1-hP-D3w" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yc9-rW-08i"/>
+                            <constraint firstItem="Djm-rl-vrE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ecr-a1-VnB"/>
+                            <constraint firstItem="Djm-rl-vrE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xYe-mg-g28"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="339"/>
+        </scene>
+        <!--Swiper View Controller-->
+        <scene sceneID="gy6-a1-44F">
+            <objects>
+                <viewController id="QT8-bL-71f" customClass="SwiperViewController" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSn-is-aZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="X1u-dR-xzk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XsF-A4-1QW">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLN-SY-VXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198.5" y="339"/>
+        </scene>
+        <!--Swiper View Controller2-->
+        <scene sceneID="uU5-gI-cFc">
+            <objects>
+                <viewController id="QHL-Es-xxW" customClass="SwiperViewController2" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TZQ-1h-7J1"/>
+                        <viewControllerLayoutGuide type="bottom" id="CJM-VM-p05"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X2k-LD-olz">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngO-zJ-fVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.5" y="339"/>
+        </scene>
+    </scenes>
+</document>

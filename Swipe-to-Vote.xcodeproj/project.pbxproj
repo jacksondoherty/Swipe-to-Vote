@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15369E391BFA7EB600678F0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E381BFA7EB600678F0A /* AppDelegate.swift */; };
+		15369E3B1BFA7EB600678F0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E3A1BFA7EB600678F0A /* ViewController.swift */; };
+		15369E3E1BFA7EB600678F0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15369E3C1BFA7EB600678F0A /* Main.storyboard */; };
+		15369E401BFA7EB600678F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15369E3F1BFA7EB600678F0A /* Assets.xcassets */; };
+		15369E431BFA7EB600678F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15369E411BFA7EB600678F0A /* LaunchScreen.storyboard */; };
+		15369E4E1BFA7EB600678F0A /* Swipe_to_VoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E4D1BFA7EB600678F0A /* Swipe_to_VoteTests.swift */; };
+		15369E591BFA7EB600678F0A /* Swipe_to_VoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E581BFA7EB600678F0A /* Swipe_to_VoteUITests.swift */; };
+		15369E671BFA7F7200678F0A /* SwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E661BFA7F7200678F0A /* SwiperViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		15369E691BFA7FB600678F0A /* SwiperViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E681BFA7FB600678F0A /* SwiperViewController2.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15369E4A1BFA7EB600678F0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15369E2D1BFA7EB600678F0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15369E341BFA7EB600678F0A;
+			remoteInfo = "Swipe-to-Vote";
+		};
+		15369E551BFA7EB600678F0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15369E2D1BFA7EB600678F0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15369E341BFA7EB600678F0A;
+			remoteInfo = "Swipe-to-Vote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15369E351BFA7EB600678F0A /* Swipe-to-Vote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swipe-to-Vote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15369E381BFA7EB600678F0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15369E3A1BFA7EB600678F0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15369E3D1BFA7EB600678F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15369E3F1BFA7EB600678F0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15369E421BFA7EB600678F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15369E441BFA7EB600678F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15369E491BFA7EB600678F0A /* Swipe-to-VoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swipe-to-VoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15369E4D1BFA7EB600678F0A /* Swipe_to_VoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe_to_VoteTests.swift; sourceTree = "<group>"; };
+		15369E4F1BFA7EB600678F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15369E541BFA7EB600678F0A /* Swipe-to-VoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swipe-to-VoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15369E581BFA7EB600678F0A /* Swipe_to_VoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe_to_VoteUITests.swift; sourceTree = "<group>"; };
+		15369E5A1BFA7EB600678F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15369E661BFA7F7200678F0A /* SwiperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewController.swift; sourceTree = "<group>"; };
+		15369E681BFA7FB600678F0A /* SwiperViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewController2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15369E321BFA7EB600678F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E461BFA7EB600678F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E511BFA7EB600678F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15369E2C1BFA7EB600678F0A = {
+			isa = PBXGroup;
+			children = (
+				15369E371BFA7EB600678F0A /* Swipe-to-Vote */,
+				15369E4C1BFA7EB600678F0A /* Swipe-to-VoteTests */,
+				15369E571BFA7EB600678F0A /* Swipe-to-VoteUITests */,
+				15369E361BFA7EB600678F0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15369E361BFA7EB600678F0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15369E351BFA7EB600678F0A /* Swipe-to-Vote.app */,
+				15369E491BFA7EB600678F0A /* Swipe-to-VoteTests.xctest */,
+				15369E541BFA7EB600678F0A /* Swipe-to-VoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15369E371BFA7EB600678F0A /* Swipe-to-Vote */ = {
+			isa = PBXGroup;
+			children = (
+				15369E3A1BFA7EB600678F0A /* ViewController.swift */,
+				15369E661BFA7F7200678F0A /* SwiperViewController.swift */,
+				15369E681BFA7FB600678F0A /* SwiperViewController2.swift */,
+				15369E3C1BFA7EB600678F0A /* Main.storyboard */,
+				15369E3F1BFA7EB600678F0A /* Assets.xcassets */,
+				15369E381BFA7EB600678F0A /* AppDelegate.swift */,
+				15369E411BFA7EB600678F0A /* LaunchScreen.storyboard */,
+				15369E441BFA7EB600678F0A /* Info.plist */,
+			);
+			path = "Swipe-to-Vote";
+			sourceTree = "<group>";
+		};
+		15369E4C1BFA7EB600678F0A /* Swipe-to-VoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				15369E4D1BFA7EB600678F0A /* Swipe_to_VoteTests.swift */,
+				15369E4F1BFA7EB600678F0A /* Info.plist */,
+			);
+			path = "Swipe-to-VoteTests";
+			sourceTree = "<group>";
+		};
+		15369E571BFA7EB600678F0A /* Swipe-to-VoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15369E581BFA7EB600678F0A /* Swipe_to_VoteUITests.swift */,
+				15369E5A1BFA7EB600678F0A /* Info.plist */,
+			);
+			path = "Swipe-to-VoteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15369E341BFA7EB600678F0A /* Swipe-to-Vote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15369E5D1BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-Vote" */;
+			buildPhases = (
+				15369E311BFA7EB600678F0A /* Sources */,
+				15369E321BFA7EB600678F0A /* Frameworks */,
+				15369E331BFA7EB600678F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swipe-to-Vote";
+			productName = "Swipe-to-Vote";
+			productReference = 15369E351BFA7EB600678F0A /* Swipe-to-Vote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15369E481BFA7EB600678F0A /* Swipe-to-VoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15369E601BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-VoteTests" */;
+			buildPhases = (
+				15369E451BFA7EB600678F0A /* Sources */,
+				15369E461BFA7EB600678F0A /* Frameworks */,
+				15369E471BFA7EB600678F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15369E4B1BFA7EB600678F0A /* PBXTargetDependency */,
+			);
+			name = "Swipe-to-VoteTests";
+			productName = "Swipe-to-VoteTests";
+			productReference = 15369E491BFA7EB600678F0A /* Swipe-to-VoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15369E531BFA7EB600678F0A /* Swipe-to-VoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15369E631BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-VoteUITests" */;
+			buildPhases = (
+				15369E501BFA7EB600678F0A /* Sources */,
+				15369E511BFA7EB600678F0A /* Frameworks */,
+				15369E521BFA7EB600678F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15369E561BFA7EB600678F0A /* PBXTargetDependency */,
+			);
+			name = "Swipe-to-VoteUITests";
+			productName = "Swipe-to-VoteUITests";
+			productReference = 15369E541BFA7EB600678F0A /* Swipe-to-VoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15369E2D1BFA7EB600678F0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jackson Doherty";
+				TargetAttributes = {
+					15369E341BFA7EB600678F0A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					15369E481BFA7EB600678F0A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 15369E341BFA7EB600678F0A;
+					};
+					15369E531BFA7EB600678F0A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 15369E341BFA7EB600678F0A;
+					};
+				};
+			};
+			buildConfigurationList = 15369E301BFA7EB600678F0A /* Build configuration list for PBXProject "Swipe-to-Vote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15369E2C1BFA7EB600678F0A;
+			productRefGroup = 15369E361BFA7EB600678F0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15369E341BFA7EB600678F0A /* Swipe-to-Vote */,
+				15369E481BFA7EB600678F0A /* Swipe-to-VoteTests */,
+				15369E531BFA7EB600678F0A /* Swipe-to-VoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15369E331BFA7EB600678F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15369E431BFA7EB600678F0A /* LaunchScreen.storyboard in Resources */,
+				15369E401BFA7EB600678F0A /* Assets.xcassets in Resources */,
+				15369E3E1BFA7EB600678F0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E471BFA7EB600678F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E521BFA7EB600678F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15369E311BFA7EB600678F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15369E3B1BFA7EB600678F0A /* ViewController.swift in Sources */,
+				15369E691BFA7FB600678F0A /* SwiperViewController2.swift in Sources */,
+				15369E671BFA7F7200678F0A /* SwiperViewController.swift in Sources */,
+				15369E391BFA7EB600678F0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E451BFA7EB600678F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15369E4E1BFA7EB600678F0A /* Swipe_to_VoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15369E501BFA7EB600678F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15369E591BFA7EB600678F0A /* Swipe_to_VoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15369E4B1BFA7EB600678F0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15369E341BFA7EB600678F0A /* Swipe-to-Vote */;
+			targetProxy = 15369E4A1BFA7EB600678F0A /* PBXContainerItemProxy */;
+		};
+		15369E561BFA7EB600678F0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15369E341BFA7EB600678F0A /* Swipe-to-Vote */;
+			targetProxy = 15369E551BFA7EB600678F0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15369E3C1BFA7EB600678F0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15369E3D1BFA7EB600678F0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15369E411BFA7EB600678F0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15369E421BFA7EB600678F0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15369E5B1BFA7EB600678F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15369E5C1BFA7EB600678F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15369E5E1BFA7EB600678F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Swipe-to-Vote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-Vote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15369E5F1BFA7EB600678F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Swipe-to-Vote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-Vote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		15369E611BFA7EB600678F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Swipe-to-VoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-VoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe-to-Vote.app/Swipe-to-Vote";
+			};
+			name = Debug;
+		};
+		15369E621BFA7EB600678F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Swipe-to-VoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-VoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swipe-to-Vote.app/Swipe-to-Vote";
+			};
+			name = Release;
+		};
+		15369E641BFA7EB600678F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Swipe-to-VoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-VoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Swipe-to-Vote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		15369E651BFA7EB600678F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Swipe-to-VoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JacksonDoherty.Swipe-to-VoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Swipe-to-Vote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15369E301BFA7EB600678F0A /* Build configuration list for PBXProject "Swipe-to-Vote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15369E5B1BFA7EB600678F0A /* Debug */,
+				15369E5C1BFA7EB600678F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15369E5D1BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-Vote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15369E5E1BFA7EB600678F0A /* Debug */,
+				15369E5F1BFA7EB600678F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15369E601BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-VoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15369E611BFA7EB600678F0A /* Debug */,
+				15369E621BFA7EB600678F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15369E631BFA7EB600678F0A /* Build configuration list for PBXNativeTarget "Swipe-to-VoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15369E641BFA7EB600678F0A /* Debug */,
+				15369E651BFA7EB600678F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15369E2D1BFA7EB600678F0A /* Project object */;
+}
