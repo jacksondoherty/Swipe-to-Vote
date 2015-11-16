@@ -9,7 +9,7 @@
 import UIKit
 
 class SwiperViewController2: UIViewController {
-
+    
     // block
     
     var block = UIView()
@@ -46,7 +46,12 @@ class SwiperViewController2: UIViewController {
         return CGPoint(x: x, y: y)
     }
     
-    let fadeColor = UIColor.purpleColor().colorWithAlphaComponent(0.6)
+    var fadeGradient : CAGradientLayer {
+        let gradient = CAGradientLayer()
+        gradient.frame = fade.bounds
+        gradient.colors = [UIColor.magentaColor().CGColor, UIColor.whiteColor().CGColor]
+        return gradient
+    }
     
     // physics
     
@@ -89,7 +94,7 @@ class SwiperViewController2: UIViewController {
     
     func createFade() {
         fade.frame = CGRect(origin: fadeStartPosition, size: fadeSize)
-        fade.backgroundColor = fadeColor
+        fade.layer.insertSublayer(fadeGradient, atIndex: 0)
         self.view.addSubview(fade)
     }
     
@@ -102,6 +107,7 @@ class SwiperViewController2: UIViewController {
     func swipe(gesture: UIPanGestureRecognizer) {
         
         // ** disable user interaction of other block **
+        
         
         let translation = gesture.translationInView(self.view)
         
@@ -134,7 +140,7 @@ class SwiperViewController2: UIViewController {
                 // add block to push behavior
                 push.addItem(block)
                 
-            // else, block and fade snap back to original position
+                // else, block and fade snap back to original position
             } else {
                 
                 block.center = CGPoint(x: block.center.x, y: blockYStartPosition)

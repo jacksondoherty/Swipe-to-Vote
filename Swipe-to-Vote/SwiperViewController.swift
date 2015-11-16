@@ -46,7 +46,12 @@ class SwiperViewController: UIViewController {
         return CGPoint(x: x, y: y)
     }
     
-    let fadeColor = UIColor.purpleColor().colorWithAlphaComponent(0.6)
+    var fadeGradient : CAGradientLayer {
+        let gradient = CAGradientLayer()
+        gradient.frame = fade.bounds
+        gradient.colors = [UIColor.purpleColor().CGColor, UIColor.whiteColor().CGColor]
+        return gradient
+    }
     
     // physics
     
@@ -89,7 +94,7 @@ class SwiperViewController: UIViewController {
     
     func createFade() {
         fade.frame = CGRect(origin: fadeStartPosition, size: fadeSize)
-        fade.backgroundColor = fadeColor
+        fade.layer.insertSublayer(fadeGradient, atIndex: 0)
         self.view.addSubview(fade)
     }
     
@@ -145,5 +150,4 @@ class SwiperViewController: UIViewController {
             }
         }
     }
-
 }
