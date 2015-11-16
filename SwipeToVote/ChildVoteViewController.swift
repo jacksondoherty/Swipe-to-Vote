@@ -20,7 +20,7 @@ class ChildVoteViewController: UIViewController {
     let push = UIPushBehavior()
     
     // attachment behaviors (attaches fades to blocks)
-    var attach1: UIAttachmentBehavior! // is this okay?
+    var attach1: UIAttachmentBehavior!
     var attach2: UIAttachmentBehavior!
     
     // swipe gestures
