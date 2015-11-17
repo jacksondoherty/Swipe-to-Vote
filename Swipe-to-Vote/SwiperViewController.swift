@@ -64,8 +64,10 @@ class SwiperViewController: UIViewController {
         lazyPush.pushDirection = CGVectorMake(0, -1.0)
         lazyPush.action = {
             
+            let multiplier = CGFloat(-3)
+            
             // once block reaches 3 superviews above superview
-            if (self.block.center.y < CGFloat((-3)*self.view.superview!.frame.height)) {
+            if (self.block.center.y < multiplier * self.view.superview!.frame.height) {
                 self.animator.removeAllBehaviors()
             }
         }
@@ -108,7 +110,6 @@ class SwiperViewController: UIViewController {
         
         // ** disable user interaction of other block **
         
-        
         let translation = gesture.translationInView(self.view)
         
         // note: coordinates here are calculated by center of views
@@ -140,7 +141,7 @@ class SwiperViewController: UIViewController {
                 // add block to push behavior
                 push.addItem(block)
                 
-                // else, block and fade snap back to original position
+            // else, block and fade snap back to original position
             } else {
                 
                 block.center = CGPoint(x: block.center.x, y: blockYStartPosition)

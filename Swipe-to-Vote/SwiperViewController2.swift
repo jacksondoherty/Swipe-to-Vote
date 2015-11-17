@@ -64,8 +64,10 @@ class SwiperViewController2: UIViewController {
         lazyPush.pushDirection = CGVectorMake(0, -1.0)
         lazyPush.action = {
             
+            let multiplier = CGFloat(-3)
+            
             // once block reaches 3 superviews above superview
-            if (self.block.center.y < CGFloat((-3)*self.view.superview!.frame.height)) {
+            if (self.block.center.y < multiplier * self.view.superview!.frame.height) {
                 self.animator.removeAllBehaviors()
             }
         }
@@ -107,7 +109,6 @@ class SwiperViewController2: UIViewController {
     func swipe(gesture: UIPanGestureRecognizer) {
         
         // ** disable user interaction of other block **
-        
         
         let translation = gesture.translationInView(self.view)
         
