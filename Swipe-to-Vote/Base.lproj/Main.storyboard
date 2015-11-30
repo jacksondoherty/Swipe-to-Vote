@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="367" y="339"/>
         </scene>
-        <!--Swiper View Controller-->
+        <!--Swiper View Controller Purple-->
         <scene sceneID="gy6-a1-44F">
             <objects>
-                <viewController id="QT8-bL-71f" customClass="SwiperViewController" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QT8-bL-71f" customClass="SwiperViewControllerPurple" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hSn-is-aZb"/>
                         <viewControllerLayoutGuide type="bottom" id="X1u-dR-xzk"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="-198.5" y="339"/>
         </scene>
-        <!--Swiper View Controller2-->
+        <!--Swiper View Controller Pink-->
         <scene sceneID="uU5-gI-cFc">
             <objects>
-                <viewController id="QHL-Es-xxW" customClass="SwiperViewController2" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QHL-Es-xxW" customClass="SwiperViewControllerPink" customModule="Swipe_to_Vote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TZQ-1h-7J1"/>
                         <viewControllerLayoutGuide type="bottom" id="CJM-VM-p05"/>

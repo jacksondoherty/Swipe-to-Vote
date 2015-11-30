@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwiperViewController: UIViewController {
+class SwiperViewControllerPurple: UIViewController {
     
     // block
     

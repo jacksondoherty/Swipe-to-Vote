@@ -14,8 +14,8 @@
 		15369E431BFA7EB600678F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15369E411BFA7EB600678F0A /* LaunchScreen.storyboard */; };
 		15369E4E1BFA7EB600678F0A /* Swipe_to_VoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E4D1BFA7EB600678F0A /* Swipe_to_VoteTests.swift */; };
 		15369E591BFA7EB600678F0A /* Swipe_to_VoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E581BFA7EB600678F0A /* Swipe_to_VoteUITests.swift */; };
-		15369E671BFA7F7200678F0A /* SwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E661BFA7F7200678F0A /* SwiperViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		15369E691BFA7FB600678F0A /* SwiperViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E681BFA7FB600678F0A /* SwiperViewController2.swift */; settings = {ASSET_TAGS = (); }; };
+		15369E671BFA7F7200678F0A /* SwiperViewControllerPurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E661BFA7F7200678F0A /* SwiperViewControllerPurple.swift */; settings = {ASSET_TAGS = (); }; };
+		15369E691BFA7FB600678F0A /* SwiperViewControllerPink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15369E681BFA7FB600678F0A /* SwiperViewControllerPink.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		15369E541BFA7EB600678F0A /* Swipe-to-VoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swipe-to-VoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15369E581BFA7EB600678F0A /* Swipe_to_VoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe_to_VoteUITests.swift; sourceTree = "<group>"; };
 		15369E5A1BFA7EB600678F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15369E661BFA7F7200678F0A /* SwiperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewController.swift; sourceTree = "<group>"; };
-		15369E681BFA7FB600678F0A /* SwiperViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewController2.swift; sourceTree = "<group>"; };
+		15369E661BFA7F7200678F0A /* SwiperViewControllerPurple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewControllerPurple.swift; sourceTree = "<group>"; };
+		15369E681BFA7FB600678F0A /* SwiperViewControllerPink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewControllerPink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				15369E3A1BFA7EB600678F0A /* ViewController.swift */,
-				15369E661BFA7F7200678F0A /* SwiperViewController.swift */,
-				15369E681BFA7FB600678F0A /* SwiperViewController2.swift */,
+				15369E661BFA7F7200678F0A /* SwiperViewControllerPurple.swift */,
+				15369E681BFA7FB600678F0A /* SwiperViewControllerPink.swift */,
 				15369E3C1BFA7EB600678F0A /* Main.storyboard */,
 				15369E3F1BFA7EB600678F0A /* Assets.xcassets */,
 				15369E381BFA7EB600678F0A /* AppDelegate.swift */,
@@ -262,8 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15369E3B1BFA7EB600678F0A /* ViewController.swift in Sources */,
-				15369E691BFA7FB600678F0A /* SwiperViewController2.swift in Sources */,
-				15369E671BFA7F7200678F0A /* SwiperViewController.swift in Sources */,
+				15369E691BFA7FB600678F0A /* SwiperViewControllerPink.swift in Sources */,
+				15369E671BFA7F7200678F0A /* SwiperViewControllerPurple.swift in Sources */,
 				15369E391BFA7EB600678F0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
